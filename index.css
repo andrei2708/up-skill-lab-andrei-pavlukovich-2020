@@ -1,0 +1,40 @@
+body {width: 1024px; 
+    padding: 0 auto; 
+    margin: 0 auto; 
+    display: flex;
+    flex-direction: column}
+.header {width: 1024px; 
+    padding: 10px; 
+    margin: 0 auto;
+    margin-top: 50px; 
+    border: 0px;
+    display: flex; 
+    flex-direction: row}
+article {width: 1024px; 
+    padding: 0px; 
+    margin: 0 auto; 
+    display: flex; 
+    flex-direction: row; }
+.character {font-family: Calibri, sans-serif;
+    width: 1024px; 
+    padding: 0px; 
+    margin: 0 auto;}
+.myInfo {
+    padding: 0px;
+    width: 600px;
+}
+.myPhoto {
+    padding: 0px;
+    margin-top: 0px;
+    margin-right: 0px;
+    width: 250px;
+}
+.position {font-size: 20px;}
+.myName {
+    font-size: 40px;
+    font-family: Arial, Helvetica, sans-serif}
+.myContacts {display: flex; 
+    flex-direction: row;}
+.columnOne {width: 250px;}
+article p {font-family: Arial, Helvetica, sans-serif;
+font-size: 15;}
