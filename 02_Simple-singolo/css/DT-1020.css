@@ -1,0 +1,59 @@
+body {position: relative;
+width: 1020px;
+height: 2065px;}
+
+    header {position: absolute;
+    width: 1020px;
+    height: 2065px;
+    left: 0px;
+    top: 0px;}
+
+    .header {
+        position: absolute;
+        width: 1020px;
+        height: 870px;
+        left: 0px;
+        top: 1195px;}
+
+        .bg-container {position: absolute;
+            width: 1020px;
+            height: 95px;
+            left: 0px;
+            top: 0px;}
+
+            .bg {position: absolute;
+                width: 1020px;
+                height: 89px;
+                left: 0px;
+                top: 0px; 
+                background: #2D303A;}
+            .border {position: absolute;
+                width: 1020px;
+                height: 6px;
+                left: 0px;
+                top: 89px; 
+                background: #323746;}
+        .logo {position: absolute;
+            width: 124px;
+            height: 25px;
+            left: 40px;
+            top: 30px;
+            
+            font-family: Lato;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 24px;
+            line-height: 30px;
+            letter-spacing: -0.03em;
+            
+            color: #FFFFFF;}
+
+            span {color: #F06C64;}
+
+    main {position: absolute;
+        width: 1020px;
+        height: 600px;
+        left: 0px;
+        top: 95px;}         
+
+        

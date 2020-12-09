@@ -1,0 +1,75 @@
+body {position: relative;
+    width: 376px;
+    height: 2244px;
+    background: #F2F2F2;}
+header {position: absolute;
+    width: 375px;
+    height: 71px;
+    left: 1px;
+    top: 0px;}
+
+    .logo-container {position: absolute;
+        width: 92px;
+        height: 24px;
+        left: 148px;
+        top: 14px;}
+        
+    h1 {font-family: 'LatoBold';
+        font-style: normal;
+        font-weight: bold;
+        font-size: 19px;
+        line-height: 24px;
+        letter-spacing: -0.02em;
+        color: #FFFFFF;}
+        .symbol {color: #F06C64;}
+    .bg-container {position: absolute;
+        width: 375px;
+        height: 71px;
+        left: -1px;
+        top: 0px;}
+        .bg {position: absolute;
+            width: 375px;
+            height: 71px;
+            left: 1px;
+            top: 0px;
+            background: #2D303A;}
+        .border {position: absolute;
+            width: 374px;
+            height: 3.35px;
+            left: 1px;
+            top: 49.65px; 
+            background: #323746;}
+        
+        background: #FFFFFF;}
+       
+        .Burger-menu-icon {list-style: none;}
+        
+        . {position: absolute;
+            width: 25px;
+            height: 2.4px;
+            left: 21px;
+            top: 26px;
+                
+            background: #ffffff;
+            border-radius: 5px;}
+            
+        .Rectangle_15 {position: absolute;
+            width: 25px;
+            height: 2.4px;
+            left: 21px;
+            top: 34.8px;
+                
+            background: #ffffff;
+            border-radius: 5px;}       
+        .Rectangle_16 {position: absolute;
+            width: 25px;
+            height: 2.4px;
+            left: 21px;
+            top: 43.6px;
+                
+            background: #ffffff;
+            border-radius: 5px;}
+            
+
+
+        
