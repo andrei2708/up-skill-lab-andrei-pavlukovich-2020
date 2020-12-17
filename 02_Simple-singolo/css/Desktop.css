@@ -2,7 +2,6 @@ body {
     display: flex;
     flex-direction: column;
     width: 1020px;
-    height: 2065px;
     background: #F2F2F2;
     margin: 20px;
     border: 0;
@@ -24,10 +23,10 @@ header {
     .logo-container {
         display: flex;
         flex-direction: row;
-        width: 300px;
+        width: 50%;
         height: 95px;
         align-items: center;
-        margin-right: 100px; 
+        
     }
         .logo {
             margin: 0;
@@ -50,25 +49,28 @@ header {
     .main-nav {
         width: 375px;
         height: 14px;
-            font-family: "LatoLight";
-            font-style: normal;
-            font-weight: bold;
-            font-size: 12px;
-            line-height: 14px;
-            text-align: right;
-            letter-spacing: 0.02em;
+        margin: 0px;
+        font-family: "LatoLight";
+        font-style: normal;
+        font-weight: bold;
+        font-size: 12px;
+        line-height: 14px;
+        margin-right: 94px;
             color: #ffffff;
-            margin-left: 14px;
-            margin-top: 40px;}
+            margin-top: 43px;
+            }
     
         .navPanel {
         margin: 0;
         list-style: none;
         display: flex;
         flex-direction: row;
-        justify-content: space-between;}
-
+        }
         
+        .navPanel li {
+            margin-left: 14px;
+        }
+
     .border {
         width: 1020px;
         height: 6px;
@@ -93,10 +95,11 @@ header {
         }
         .phone-vertical {
             width: 30%;}
+
         .phone-vertical img {
-            width: 180.85px;
-            height: 363.74px;
-            padding-left: 7px;
+            width: 240px;
+            height: 483px;
+            padding-left: 10px;
             padding-bottom: 4px;
         }
         .phone-horizontal {
@@ -104,9 +107,9 @@ header {
         }
 
         .phone-horizontal img {
-            height: 180.93px;
-            width: 364.21px;
-            padding-left: 14px;
+            width: 483px;
+            height: 240px;
+            padding-left: 17px;
             padding-bottom: 1px;
         }
         .arrow-right {
@@ -128,28 +131,30 @@ main {display: flex;
         flex-direction: column;
         justify-content: flex-start;
         align-items: flex-start;
-        /*width: 688px;*/
-        height: 634px;
-        padding: 40px 0px 0px 42px;
+        width: 1020px;
+        height: 500px;
+        background: #F2F2F2;
+        
     }
         .section-header {
-            width: 688px;
-            height: 180px;}
+            width: 936px;
+            height: 47px;
+        margin: 62px 44px 0px 40px;}
 
         .section-header span {
+            width: 171px;
+            height: 36px;
             font-family: "LatoBold";
             font-style: normal;
             font-weight: 900;
             font-size: 30px;
-            margin: 0px;
-            letter-spacing: 0.005em;
-            line-height: 42px;
+            line-height: 36px;
             color: #666D89;}
 
         .section-header p {
-            margin-bottom: 0px;
-            margin-top: 13px;
+            width: 936px;
             height: 47px;
+            
             font-family: "LatoLight";
             font-style: normal;
             font-weight: 300;
@@ -162,21 +167,20 @@ main {display: flex;
                 flex-direction: row;
                 flex-wrap: wrap;
                 justify-content: flex-start;
-                margin: 0px;
-                padding: 0px;
-                margin-top: 0px;
-                padding-top: 0px;
+              
+                margin-top: 57px;
+                padding-top: 54px;
                
             }
 
-            li {display: flex;
+            main li {display: flex;
                 flex-direction: row;
                 margin: 0;
                 padding: 0;
-                width: 344px;
+                width: 300px;
                 height: 104px;
-                margin-right: 9px;
-                margin-bottom: 41px;
+                margin-right: 20px;
+                margin-bottom: 20px;
             }
             li img {
                 height: 60px;
@@ -194,7 +198,7 @@ main {display: flex;
                 height: 77px;
                 margin: 0px;
                 padding: 0px;
-                font-family: "LatoLight";
+                font-family: "LatoRegular";
                 font-style: normal;
                 font-weight: normal;
                 font-size: 12px;
@@ -220,15 +224,16 @@ main {display: flex;
 
     .portfolio {display: flex;
         flex-direction: column;
-        width: 768px;
-        height: 1102px;
+        width: 1020px;
+        height: 870px;
         background: #2D303A;
         }
 
         .portfolioHeader {
-            margin: 59px 32px 0px 41px;
-            width: 695px;
-            height: 114px;
+            margin: 40px 32px 0px 40px;
+            padding-top: 19px;
+            width: 936px;
+            height: 95px;
         }
             .portfolioName {
                 margin: 0;
@@ -241,20 +246,21 @@ main {display: flex;
                 font-style: normal;
                 font-weight: 900;
                 font-size: 30px;
-                line-height: 42px;
-                letter-spacing: 0.01em;
+                line-height: 43px;
+                letter-spacing: 0em;
                 color: #666D89;
                 }
 
             .portfolioHeader p {
-                width: 695px;
-                height: 60px;
+                margin: 0px;
+                margin-top: 18px;
+                width: 936px;
+                height: 46.95px;
                 font-family: "LatoLight";
                 font-style: normal;
                 font-weight: 300;
                 font-size: 18px;
-                line-height: 29px;
-                
+                line-height: 27px;
                 color: #767E9E;
             }
             .filter-list {
@@ -262,7 +268,8 @@ main {display: flex;
                 flex-direction: row;
                 justify-content: space-between;
                 margin: 0;
-                padding: 12px 0px 28px 41px;
+                margin-bottom: 0px;
+                padding: 1px 0px 18px 40px;
                 width: 290px;
                 height: 22px;
             }
@@ -272,25 +279,26 @@ main {display: flex;
                 flex-wrap: wrap;
                 justify-content: space-between;
                 align-content: space-between;
-                width: 1020px;
-                height: 870px;
+                width: 940px;
+                height: 601px;
                 margin: 0;
                 padding: 0px 34px 42px 39px;
             }
             
                 .portfolioPages img {
-                width: 216.19px;
-                height: 183.76px;}
+                    width: 220px;
+                    height: 187px;}
 
                 main .border{
-                    border: 7.6px #323746;
-                    margin-top: 24px;
+                    width: 1020px;
+                    height: 6px;
+                    background: #323746;
                 }
 footer {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    width: 768px;
+    width: 1020px;
     height: 76px;
     background: #2D303A;
     }
