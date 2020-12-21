@@ -15,7 +15,7 @@
     url("/fonts/Lato/LatoBold/LatoBold.woff") format("woff"),
     url("/fonts/Lato/LatoBold/LatoBold.ttf") format("truetype");
     font-style: normal;
-    font-weight: normal;
+    font-weight: 900;
 }
 
 @font-face {
