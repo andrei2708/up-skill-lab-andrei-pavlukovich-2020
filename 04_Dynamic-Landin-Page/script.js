@@ -27,8 +27,8 @@ function addZero(n) {
 
 
 function setBGgreet() {
-    //let today = new Date(2021, 01, 01, 23, 10, 10)
-    let today = new Date(),
+    let today = new Date(2021, 11, 11, 12, 10, 10)
+    //let today = new Date(),
     hour = today.getHours();
     
     if (hour >= 23 || hour < 6) {

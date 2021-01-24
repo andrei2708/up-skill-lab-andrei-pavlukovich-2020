@@ -1,0 +1,2 @@
+console ( "Я JavaScript!" );
+ 
