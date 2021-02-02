@@ -9,47 +9,41 @@
 <body> 
     <div class="container">
         <div class="controls">
-            <h2>Фотофильтры</h2>
-    
-            <label for="base">Base Color</label>
-            <input type="color" name="base" value="#3d6f9e">
-    
-            <label for="spacing">Размер фото:</label>
-            <input type="range" name="spacing" min="20" max="100" value="50" data-sizing="%">
-    
-            <label for="blur">Размытие:</label>
-            <input type="range" name="blur" min="0" max="6" value="0" data-sizing="px">
-    
-            <label for="invert">Инверсия:</label>
-            <input type="range" name="invert" min="0" max="10" value="0" data-sizing="%">
-    
-            <label for="sepia">Сепия:</label>
-            <input type="range" name="" min="0" max="100" value="0" data-sizing="%">
-    
-            <label for="saturate">Насыщенность:</label>
-            <input type="range" name="saturate" min="0" max="100" value="100" data-sizing="%">
-    
-            <label for="hue-rotate">Оттенок:</label>
-            <input type="range" name="hue-rotate" min="0" max="360" value="0" data-sizing="deg">  
-        </div>
-    
+            <h2 class='hl'>Фотофильтры</h2>
+              <label>Цвет фона:
+                  <input type="color" name="base" value="#008C8C">
+              </label><br>
+              <label>Размер фото:
+                  <input type="range" name="spacing" min="20" max="90" value="50" data-sizing="%">
+              </label><br>
+              <label>Размытие:
+                  <input type="range" name="blur" min="0" max="6" value="0" data-sizing="px">
+              </label><br>
+              <label>Инверсия:
+                  <input type="range" name="invert" min="0" max="100" value="0" data-sizing="%">
+              </label><br>
+              <label>Сепия:
+                  <input type="range" name="sepia" min="0" max="100" value="0" data-sizing="%">
+              </label><br>
+              <label>Насыщенность:
+                  <input type="range" name="saturate" min="0" max="100" value="100" data-sizing="%">
+              </label><br>
+              <label>Оттенок:
+                  <input type="range" name="hue-rotate" min="0" max="360" value="0" data-sizing="deg">
+              </label><br>  
+        </div>   
         <div class="image">
             <img src="https://source.unsplash.com/7bwQXzbF6KE/800x500">
         </div>
-    </div>
-    
+    </div>   
     <script>
         const inputs = document.querySelectorAll('.controls input');
-
         function handleUpdate() {
             const suffix = this.dataset.sizing || '';
             document.documentElement.style.setProperty(`--${this.name}`, this.value + suffix);
-            //console.log(this.value);
         }
         inputs.forEach(input => input.addEventListener('change', handleUpdate));
-        inputs.forEach(input => input.addEventListener('mousemove', handleUpdate));
-        
+        inputs.forEach(input => input.addEventListener('mousemove', handleUpdate));    
     </script>  
-
 </body>
 </html>

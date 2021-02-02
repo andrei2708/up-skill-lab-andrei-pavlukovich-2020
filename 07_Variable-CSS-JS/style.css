@@ -1,11 +1,11 @@
 :root {
-    --base: #3d6f9e;
+    --base: #008C8C;
+    --spacing: 50%;
     --blur: 0px;
     --invert: 0%;
     --sepia: 0%;
     --saturate: 100%;
     --hue-rotate: 0deg;
-    --spacing: 50%;
 }
 
 body {
@@ -13,7 +13,7 @@ body {
     font-family: 'helvetica neue', sans-serif;
     font-weight: 100;
     font-size: 4vw;
-    background: var(--base); 
+    background: var(--base);
 }
 .container {
     display: flex;
@@ -50,11 +50,38 @@ body {
     padding: 20px;
 }
 img {           
-    filter:
-        blur(var(--blur))
-        invert(var(--invert))
-        sepia(var(--sepia))
-        saturate(var(--saturate))
-        hue-rotate(var(--hue-rotate));
-    width: var(--spacing);        
+    width: var(--spacing, 50%);
+    filter: blur(var(--blur, 0px)) 
+    invert(var(--invert, 0%)) 
+    sepia(var(--sepia, 0%))  
+    saturate(var(--saturate, 100%)) 
+    hue-rotate(var(--hue-rotate, 0deg));
+}
+img {
+    display: block;
+    max-height: 90vh;
+    max-width: 90vh;
+}
+label {
+    line-height: 40px;
+}
+.hl {
+    color: var(--base, #008C8C);
+    filter: hue-rotate(180deg) 
+    invert(100%) 
+    contrast(140%);
+}
+@media(max-width: 890px) {
+    .container {
+        flex-direction: column;
+    }  
+    .controls {
+        font-size: 16px;
+    }
+}
+.colorpick-eyedropper-input-trigger {
+    display:none !important;
+    width: 0px !important;
+    height: 0px !important;
+    opacity: 0 !important;
 }
