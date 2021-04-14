@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&display=swap');
+
+body {
+    margin: 0 auto;
+
+}
+
+.page {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 530px;
+    width: 660px;
+    margin-top: 50px;
+    background: linear-gradient(to top,  #cbe8e5, #ffffff);
+}
+
+h1 {
+    text-align: center;
+    margin-top: 65px;
+    color: #77d0e6;
+    font-size: 70px;
+    font-family: 'Comfortaa', cursive;
+    font-weight: bold;
+    margin-bottom: 0px;
+}
+
+.result {
+    margin-top: 15px;
+    height: 225px;
+    width: 325px;
+    background-color: #f4f7f9;
+    align-items: center;
+    justify-content: center;
+    color: #000000;
+}
+
+.continue {
+    height: 45px;
+    width: 155px;
+    background: linear-gradient(to top,  #386b02, #52a001);
+    border-radius: 5px;
+    border: none;
+    color:#ffffff;
+    margin-top: 80px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+}
+
+.continue:hover {
+    background: linear-gradient(to top,  #386b02, #63c102);
+    cursor: pointer;
+
+}
+
+.speed, 
+.accuracy {
+    text-align: center;
+    line-height: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.score {
+    color: #993300;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+
+
+

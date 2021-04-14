@@ -1,0 +1,178 @@
+body {
+    margin: 0 auto;
+}
+
+.page {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    height: 530px;
+    width: 660px;
+    margin-top: 50px;
+}
+
+.field {
+    position: relative;
+    width: 460px;
+    background: linear-gradient(to top,  #cbe8e5, #ffffff);
+    overflow: hidden;
+}
+
+.ball {
+    position: absolute;
+    background-color: #b4e6e6;
+    width: 50px;
+    height: 50px;
+    border: 2px solid #7bd3d3;
+    border-radius: 50%;
+}
+
+.numberOne,
+.numberTwo {
+    margin: 0 auto;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: right;
+    font-size: 20px;
+    width: 20px;
+}
+
+.operation {
+    width: 10px;
+    height: 3px;
+    text-align: center;
+}
+/*.ball {
+    animation-name: ball;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+}
+
+@keyframes ball {
+    0% {top: 0px;}
+    100% {top: 450px;}
+}*/
+
+.wave {
+    position: relative;
+    top: 300px;
+}
+
+.counterBlock {
+    width: 200px;
+    background-color: #cbe8e5;
+    display: flex;
+    flex-direction: column;
+}
+
+.score {
+    height: 35px;
+    width: 180px;
+    background-color: #f1f1f1;
+    margin: auto;
+    margin-top: 0px;
+    margin-bottom: 50px;
+    border: 2px solid #ffffff;
+    border-top: none;
+    border-bottom-left-radius: 100px;
+    border-bottom-right-radius: 100px;
+}
+
+.score p {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 18px;
+    text-align: center;
+    margin: auto;
+    margin-top: 5px;
+}
+
+.counter {
+    width: 170px;
+    height: 240px;
+    background-color: #e7dfc2;
+    margin: auto;
+    margin-top: 0px;
+}
+
+.container {
+    width: 160px;
+    height: 230px;
+    background-color: #eeeeee;
+    margin: 0 auto;
+    margin-top: 3px;
+    border: 2px solid #999999;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    display: flex;
+    flex-direction: column;
+}
+
+.displayCounter {
+    height: 75px;
+}
+
+#display {
+    height: 60px;
+    width: 152px;
+    list-style: none;
+    margin-top: 3px;
+    border: none;
+    text-align: right;
+    font-size: 30px;
+}
+
+.keyboard {
+    display: flex;
+    flex-direction: row;
+    height: 170px;
+}
+
+.one {
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+}
+
+.two {
+    width: 40px;
+    margin: auto;
+}
+
+button {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 40px;
+    height: 40px;
+    border-style: none;
+    border: 1px solid #999999;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 10px;
+    background-color: #ffffff;
+}
+
+button:hover {
+    background-color: #f1f1f1;
+}
+
+button:active {
+    background-color: #c2b5b5;
+}
+
+button:focus {
+    outline: none;
+}
+
+#clear,
+.enter-btn {
+    height: 80px;
+}
+
+#delete {
+    padding: 0;
+    text-align: center;
+}
+.zero-btn {
+    width: 80px;
+}
+
+ 

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/play.css">
+    <title>Raindrops</title>
+</head>
+<body>
+<div class="page">
+    <div class="field">
+        <div class="ball">
+            <div class="numberOne">1</div>
+            <div class="operation">*</div>
+            <div class="numberTwo">2</div>
+        </div>
+        <div class="wave">
+            <img src="wave.png" alt="" width="460px">
+        </div>   
+    </div>
+    <div class="counterBlock">
+        <div class="score">
+            <p><img src="" alt="">Score:</p>
+        </div>
+        <div class="counter">
+            <div class="container">
+                <div class="displayCounter">
+
+                    <input disabled type="text" id="display" value="0" name="" placeholder="0000" class="calc_display_input">
+                </div>
+                <div class="keyboard">
+                    <section class="one">
+                        <button class="number btn">7</button>
+                        <button class="number btn">8</button>
+                        <button class="number btn">9</button>
+                        <button class="number btn">4</button>
+                        <button class="number btn">5</button>
+                        <button class="number btn">6</button>
+                        <button class="number btn">1</button>
+                        <button class="number btn">2</button>
+                        <button class="number btn">3</button>
+                        <button class="number zero-btn">0</button>
+                        <button class="clear-btn" id="delete">Delete</button>
+                    </section>
+                    <section class="two">
+                        <button class="clear-btn" id="clear">Clear</button>
+                        <button class="enter-btn" id="">Enter</button>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
