@@ -1,1 +1,1 @@
-# up-skill-lab-andrei-pavlukovich-2020
+https://rolling-scopes-school.github.io/andrei2708-UPSKILLLAB/Fancy-weather/
