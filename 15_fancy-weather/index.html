@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="/images/favicon.ico">
+  <link rel="stylesheet" href="style.css">
+  <title>fancy-weather</title>
+</head>
+<body>
+  <div class="background"></div>
+  <div class="background"></div>
+  <div class="background"></div>
+  <header>
+    <div class="header-container">
+      <div class="left-buttons">
+        <button class="refresh-btn">
+        <img class="vector" src="/images/Vector.svg" alt="">
+        </button>
+        <select name="lang-button" id="language">
+          <option class="lang-en">en</option>
+          <option>be</option>
+          <option class="lang-ru">ru</option>
+        </select>
+        <button class="btn f-btn">°F</button>
+        <button class="btn c-btn btn-active">°С</button>
+      </div>
+      <div class="search-field">
+        <form>
+          <input class="input-value" value="" name="" type="text" placeholder="Search city or ZIP"/>
+          <button class="search-btn" type="submit">Search</button>
+        </form>
+
+      </div>    
+    </div>
+  </header>
+  <main>
+    <section class="weather">
+      <div class="date-location">
+        <div class="location">
+          <h1 class="city"></h1>
+          <p class="country"></p>
+        </div>
+        <div class="data-container">
+          <p class="date-today">Mon 28 October</p>
+          <p class="time-today">0:00</p>
+        </div>
+      </div>
+      <div class="weather-conteiner">
+        <div class="weather-content">
+            <p class="icon"></p>
+            <p class="temp-today">0</p>
+            <div class="overcast">
+              <p>overcast</p>
+              <p class="feels-like">Feels like: </p>
+              <p class="wind">Wind: </p>
+              <p class="humidity">Humidity: </p>
+            </div>
+        </div>
+        <div class="weather-days">
+            <div id="day" class="day1">
+              <p class="name-day1"></p>
+              <p class="temp-day1"></p>
+              <p class="icon-day1"></p>
+            </div>
+            <div id="day" class="day2">
+              <p class="name-day2"></p>
+              <p class="temp-day2"></p>
+              <p class="icon-day2"></p>
+            </div>
+            <div id="day" class="day3">
+              <p class="name-day3"></p>
+              <p class="temp-day3"></p>
+              <p class="icon-day3"></p>
+            </div>
+        </div>
+      </div>
+    </section>
+    <section class="map-container">
+      <div id="map">
+        <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A0860b334b542e7ce7699303ebc8e3a9699405e1dceba6faa4502f7c8c3c63ef2&amp;width=400&amp;height=400&amp;lang=be_RU&amp;scroll=true"></script>
+      </div>
+      <div class="coordinates">
+        <p class="latitude"></p>
+        <p class="longitude"></p>
+      </div>
+    </section>
+  </main>
+  <script src="script.js"></script>
+  <script src="index.js"></script>
+  <script src="geo.js"></script>
+</body>
+</html>
