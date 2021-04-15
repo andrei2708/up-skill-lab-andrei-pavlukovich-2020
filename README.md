@@ -1,1 +1,1 @@
-https://rolling-scopes-school.github.io/andrei2708-UPSKILLLAB/fancy-weather/
+https://rolling-scopes-school.github.io/andrei2708-UPSKILLLAB/Fancy-weather/
