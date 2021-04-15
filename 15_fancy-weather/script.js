@@ -20,9 +20,23 @@ setInterval(function() {
 
 setInterval(function () {
   let date = new Date();
-  let fierstDay = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"][date.getDay()+1];
-  let secondDay = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"][date.getDay()+2];
-  let thirdDay = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"][date.getDay()+3];
+  
+  let numberDayOne = (date.getDay()+1);
+  let numberDayTwo = (date.getDay()+2);
+  let numberDayThree = (date.getDay()+3);
+  if (numberDayOne  > 6) {
+     numberDayOne = 0;    
+  } else if (numberDayTwo > 6) {
+    numberDayTwo = 0;
+  } else if (numberDayThree > 6) {
+    numberDayThree = 0;
+  }
+  //console.log(numberDayOne);
+  //console.log(numberDayTwo);
+  //console.log(numberDayThree);
+  let fierstDay = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"][numberDayOne];
+  let secondDay = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"][numberDayTwo];
+  let thirdDay = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"][numberDayThree];
   nextDay.textContent = fierstDay;
   secondNextDay.textContent = secondDay;
   thirdNextDay.textContent = thirdDay;
@@ -38,7 +52,7 @@ searchButton.addEventListener("click", function(e) {
   fetch(`http://api.openweathermap.org/data/2.5/weather?q=${inputValue.value}&appid=565978bc4df34911533625cad110876b`)
   .then(response => response.json())
   .then(function (res) {
-    console.log(res);
+    //console.log(res);
     const {lat, lon} = res.coord;
     document.querySelector(".city").textContent = res.name + ",";
     document.querySelector(".country").textContent = res.sys.country;
@@ -89,7 +103,7 @@ const sucessfullLookup = (position) => {
   fetch (`https://api.opencagedata.com/geocode/v1/json?q=${latitude}+${longitude}&key=09947a34e4e04349953704d0d8679de2&language=en&pretty=1`)
     .then(response => response.json())
     .then(function (pos) {
-      console.log(pos);
+      //console.log(pos);
       document.querySelector(".country").textContent = pos.results[0].components.country;
       document.querySelector(".latitude").innerHTML = `latitude: ${(pos.results[0].geometry.lat).toString().slice(0, 2)}&deg${(pos.results[0].geometry.lat).toString().slice(3, 5)}'`;
       document.querySelector(".longitude").innerHTML = `longitude: ${(pos.results[0].geometry.lng).toString().slice(0, 2)}&deg${(pos.results[0].geometry.lng).toString().slice(3, 5)}'`; 
@@ -140,7 +154,7 @@ navigator.geolocation.getCurrentPosition(sucessfullLookup, console.log);
 const refreshButton = document.querySelector(".refresh-btn");
 const bodyBackground = document.querySelector("body");
 
- refreshButton.addEventListener("click", function(e) {
+ refreshButton.addEventListener("click", function() {
  
   let image = ["/images/bg\ 2.svg", "/images/bg\ 1.svg", "/images/bg\ 3.svg" ];
   let index = 0;
