@@ -4,8 +4,6 @@ let secondNextDay = document.querySelector(".name-day2");
 let thirdNextDay = document.querySelector(".name-day3");
 const btnTempF = document.querySelector(".c-btn");
 const btnTempC = document.querySelector(".f-btn");
-const langEnBtn = document.querySelector(".lang-en");
-const langRuBtn = document.querySelector("#language .lang-ru");
 
 setInterval(function(){
     let now = new Date().toLocaleTimeString();
@@ -155,8 +153,10 @@ const refreshButton = document.querySelector(".refresh-btn");
 const bodyBackground = document.querySelector("body");
 
  refreshButton.addEventListener("click", function() {
- 
-  let image = ["/images/bg\ 2.svg", "/images/bg\ 1.svg", "/images/bg\ 3.svg" ];
-  let index = 0;
-  document.body.style.backgroundImage = 'url("' + image[index] + '")';
+  let image = ['./images/bg-1.svg', './images/bg-2.svg', './images/bg-3.svg', './images/bg-4.png', './images/bg-5.png',
+    './images/bg-6.png', './images/bg-7.png', './images/bg-8.png', './images/bg-9.jpg', './images/bg-10.png' ];
+  let index = Math.floor(Math.random()*10);
+  console.log(Math.floor(index*10));
+
+  document.body.style.backgroundImage = 'url('+ `${image[index]}` + ')';
 })    
